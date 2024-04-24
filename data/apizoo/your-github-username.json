@@ -1,0 +1,74 @@
+[
+  [
+    {
+      "user_name": "Amokhalad",
+      "api_name": "torch.cpu.current_device",
+      "api_call": "torch.cpu.current_device()",
+      "api_version": null,
+      "api_arguments": [],
+      "functionality": "Returns current device for cpu. Always 'cpu'. This function only exists to facilitate device-agnostic code",
+      "env_requirements": null,
+      "example_code": "import torch\ncurrent_device = torch.cpu.current_device()",
+      "meta_data": null,
+      "Questions": [
+        "How can I determine the current device for CPU in Torch?"
+      ]
+    }
+  ],
+  [
+    {
+      "user_name": "Amokhalad",
+      "api_name": "torch.cpu.current_stream",
+      "api_call": "torch.cuda.current_stream(device=None)",
+      "api_version": null,
+      "api_arguments": [
+        [
+          "device"
+        ]
+      ],
+      "functionality": "Returns the currently selected stream for a given device.",
+      "env_requirements": null,
+      "example_code": "import torch\nstream = torch.cuda.current_stream()\nprint(stream)",
+      "meta_data": null,
+      "Questions": [
+        "I am working on a deep learning project and need to manage streams for different devices. How can I get the currently selected stream for a specific device?"
+      ]
+    }
+  ],
+  [
+    {
+      "user_name": "Amokhalad",
+      "api_name": "torch.cpu.is_available",
+      "api_call": "torch.cpu.is_available()",
+      "api_version": null,
+      "api_arguments": [],
+      "functionality": "Returns a bool indicating if CPU is currently available.",
+      "env_requirements": null,
+      "example_code": "import torch\n\n# Check if CPU is available\ncpu_available = torch.cpu.is_available()\nprint(cpu_available)",
+      "meta_data": null,
+      "Questions": [
+        "I am developing a machine learning model and want to check if CPU is available for training."
+      ]
+    }
+  ],
+  [
+    {
+      "user_name": "Amokhalad",
+      "api_name": "torch.cpu.synchronize",
+      "api_call": "torch.cuda.synchronize(device='cpu')",
+      "api_version": null,
+      "api_arguments": [
+        [
+          "device"
+        ]
+      ],
+      "functionality": "Waits for all kernels in all streams on the CPU device to complete.",
+      "env_requirements": null,
+      "example_code": "import torch\ntorch.cuda.synchronize(device='cpu')",
+      "meta_data": null,
+      "Questions": [
+        "I have a machine learning model running on the CPU device. How can I ensure that all kernels in all streams have completed before proceeding to the next step?"
+      ]
+    }
+  ]
+]
