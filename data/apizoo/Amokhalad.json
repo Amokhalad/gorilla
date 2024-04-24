@@ -1,0 +1,59 @@
+[
+  [
+    {
+      "user_name": "Amokhalad",
+      "api_name": "Create File",
+      "api_call": "stripe.File.create(file='@/path/to/a/file.jpg', purpose='dispute_evidence')",
+      "api_version": null,
+      "api_arguments": [
+        [
+          "file",
+          "purpose"
+        ]
+      ],
+      "functionality": "Upload a file to Stripe",
+      "env_requirements": null,
+      "example_code": "curl https://files.stripe.com/v1/files \\ -u sk_test_4eC39Hq...arjtT1zdp7dcsk_test_4eC39HqLyjWDarjtT1zdp7dc: \\ -F purpose=dispute_evidence \\ -F file=\"@/path/to/a/file.jpg\"",
+      "meta_data": null,
+      "Questions": [
+        "I need to upload a file to Stripe for dispute evidence."
+      ]
+    },
+    {
+      "user_name": "Amokhalad",
+      "api_name": "Retrieve File",
+      "api_call": "stripe.File.retrieve(id='file_1Mr4LDLkdIwHu7ixFCz0dZiH')",
+      "api_version": null,
+      "api_arguments": [
+        [
+          "id"
+        ]
+      ],
+      "functionality": "Retrieve details of an existing file",
+      "env_requirements": null,
+      "example_code": "curl https://api.stripe.com/v1/files/@/path/to/a/file.png \\ -u \"sk_test_4eC39Hq...arjtT1zdp7dcsk_test_4eC39HqLyjWDarjtT1zdp7dc:\"",
+      "meta_data": null,
+      "Questions": [
+        "I want to retrieve details of a specific file from Stripe."
+      ]
+    },
+    {
+      "user_name": "Amokhalad",
+      "api_name": "List Files",
+      "api_call": "stripe.File.list(limit=3)",
+      "api_version": null,
+      "api_arguments": [
+        [
+          "limit"
+        ]
+      ],
+      "functionality": "List all files accessible to the account",
+      "env_requirements": null,
+      "example_code": "curl -G https://api.stripe.com/v1/files \\ -u \"sk_test_4eC39Hq...arjtT1zdp7dcsk_test_4eC39HqLyjWDarjtT1zdp7dc:\" \\ -d limit=3",
+      "meta_data": null,
+      "Questions": [
+        "I need to list all files accessible to my Stripe account."
+      ]
+    }
+  ]
+]
